@@ -1,8 +1,9 @@
 name: deepchemenv
 channels:
-  - omnia
-  - deepchem
   - rdkit
+  - deepchem
+  - omnia
+  - glemaitre
   - conda-forge
   - defaults
 dependencies:
@@ -11,10 +12,8 @@ dependencies:
   - astor=0.7.1=py_0
   - attrs=18.2.0=py_0
   - backcall=0.1.0=py_0
-  - blas=1.0=mkl
   - bleach=1.5.0=py36_0
   - blosc=1.15.1=hf484d3e_1002
-  - boost=1.63.0=py36h415b752_1
   - bzip2=1.0.6=h14c3975_1002
   - c-ares=1.15.0=h14c3975_1001
   - ca-certificates=2018.11.29=ha4d7672_0
@@ -26,10 +25,9 @@ dependencies:
   - cycler=0.10.0=py_1
   - dbus=1.13.0=h4e0c4b3_1000
   - decorator=4.3.2=py_0
-  - deepchem=2.1.0=py36_0
+  - defusedxml=0.5.0=py_1
   - entrypoints=0.3=py36_1000
   - expat=2.2.5=hf484d3e_1002
-  - fftw3f=3.3.4=2
   - fontconfig=2.12.6=0
   - freetype=2.8.1=hfa320df_1
   - gast=0.2.1.post0=py_0
@@ -38,11 +36,10 @@ dependencies:
   - grpcio=1.16.0=py36h4f00d22_1000
   - gst-plugins-base=1.12.5=h3865690_1000
   - gstreamer=1.12.5=h61a6719_0
-  - hdf5=1.10.4=nompi_h11e915b_1105
+  - hdf5=1.10.4=nompi_h3c11f04_1106
   - html5lib=0.9999999=py36_0
   - icu=58.2=hf484d3e_1000
   - idna=2.6=py36_1
-  - intel-openmp=2019.1=144
   - ipykernel=5.1.0=py36h24bf2e0_1002
   - ipython=7.3.0=py36h24bf2e0_0
   - ipython_genutils=0.2.0=py_1
@@ -53,45 +50,36 @@ dependencies:
   - jpeg=9c=h14c3975_1001
   - jsonschema=3.0.0=py36_0
   - jupyter=1.0.0=py_1
-  - jupyter_client=5.2.4=py_1
+  - jupyter_client=5.2.4=py_3
   - jupyter_console=6.0.0=py_0
   - jupyter_core=4.4.0=py_0
   - kiwisolver=1.0.1=py36h6bb024c_1002
   - libffi=3.2.1=hf484d3e_1005
-  - libgcc-ng=7.3.0=hdf63c60_0
   - libgfortran=3.0.0=1
-  - libgfortran-ng=7.2.0=hdf63c60_3
   - libiconv=1.15=h14c3975_1004
   - libpng=1.6.34=ha92aebf_2
   - libprotobuf=3.6.1=hdbcaa40_1001
   - libsodium=1.0.16=h14c3975_1001
-  - libstdcxx-ng=7.3.0=hdf63c60_0
   - libtiff=4.0.9=h648cc4a_1002
   - libxcb=1.13=h14c3975_1002
   - libxml2=2.9.8=h143f9aa_1005
   - lzo=2.10=h14c3975_1000
   - markdown=2.6.11=py_0
   - markupsafe=1.1.1=py36h14c3975_0
-  - matplotlib=2.2.2=py36_1
-  - mdtraj=1.9.1=py36_1
   - mistune=0.8.4=py36h14c3975_1000
-  - mkl=2018.0.3=1
   - mkl_fft=1.0.10=py36_0
   - mkl_random=1.0.2=py36_0
   - mock=2.0.0=py36_1001
   - nb_conda=2.2.1=py36_0
   - nb_conda_kernels=2.2.1=py36_0
-  - nbconvert=5.3.1=py_1
+  - nbconvert=5.5.0=py_0
   - nbformat=4.4.0=py_1
   - ncurses=5.9=10
   - networkx=2.1=py_1
-  - notebook=5.7.4=py36_1000
+  - notebook=5.7.8=py36_0
   - numexpr=2.6.9=py36h637b7d7_1000
-  - numpy=1.15.4=py36h1d66e8a_0
-  - numpy-base=1.15.4=py36h81de0dd_0
   - olefile=0.46=py_0
   - openblas=0.2.20=8
-  - openmm=7.3.0=py36_cuda92_rc_1
   - openssl=1.0.2q=h14c3975_0
   - pandas=0.22.0=py36_1
   - pandoc=2.6=1
@@ -99,7 +87,6 @@ dependencies:
   - parso=0.3.4=py_0
   - pbr=5.1.2=py_0
   - pcre=8.41=hf484d3e_1003
-  - pdbfixer=1.4=py36_0
   - pexpect=4.6.0=py36_1000
   - pickleshare=0.7.5=py36_1000
   - pillow=5.0.0=py36_0
@@ -124,14 +111,10 @@ dependencies:
   - pyzmq=18.0.0=py36h0e1adb2_0
   - qt=5.6.2=7
   - qtconsole=4.4.3=py_0
-  - rdkit=2017.09.1=py36_1
   - readline=7.0=0
   - requests=2.18.4=py36_1
-  - scikit-learn=0.19.1=py36hedc7406_0
-  - scipy=1.1.0=py36hfa4b5c9_1
   - send2trash=1.5.0=py_0
   - setuptools=40.8.0=py36_0
-  - simdna=0.4.2=py_0
   - sip=4.18.1=py36hf484d3e_1000
   - six=1.12.0=py36_1000
   - sqlite=3.20.1=2
@@ -155,5 +138,28 @@ dependencies:
   - xz=5.2.4=h14c3975_1001
   - zeromq=4.2.5=hf484d3e_1006
   - zlib=1.2.11=h14c3975_1004
-prefix: /home/nolelin/anaconda3/envs/deepchemenv
+  - deepchem=2.1.0=py36_0
+  - mdtraj=1.9.1=py36_1
+  - simdna=0.4.2=py_0
+  - blas=1.0=mkl
+  - intel-openmp=2019.1=144
+  - libgcc-ng=7.3.0=hdf63c60_0
+  - libgfortran-ng=7.2.0=hdf63c60_3
+  - libstdcxx-ng=7.3.0=hdf63c60_0
+  - matplotlib=2.2.2=py36h0e671d2_0
+  - mkl=2018.0.3=1
+  - numpy=1.15.4=py36h1d66e8a_0
+  - numpy-base=1.15.4=py36h81de0dd_0
+  - scikit-learn=0.19.1=py36hedc7406_0
+  - scipy=1.1.0=py36hfa4b5c9_1
+  - imbalanced-learn=0.3.1=pyh2cb239c_0
+  - fftw3f=3.3.4=2
+  - openmm=7.3.0=py36_cuda92_rc_1
+  - pdbfixer=1.4=py36_0
+  - boost=1.63.0=py36h415b752_1
+  - rdkit=2017.09.1=py36_1
+  - pip:
+    - imblearn==0.0
+    - tables==3.4.4
+prefix: /opt/conda/envs/deepchemenv
 
